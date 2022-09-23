@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 
-const user ={
+const user = {
   name: {
     type: String,
     required: true,
@@ -18,8 +18,15 @@ const user ={
   password: {
     type: String,
     required: true,
+  },
+  followersCount :{
+    type : Number,
+    default :0
+  },
+  followers :{
+    type : Array,
+    default :[]
   }
-
 };
 
 var UserSchema = new Schema( user,{ timestamps: true });
