@@ -1,0 +1,105 @@
+.home-banner{
+    background-image: url('../../assets/banner.png');
+    height: 520px;
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-banner-content{
+    color: white;
+}
+.home-banner-content h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 72px;
+}
+
+
+.home-child-card img{
+    height: 300px;
+}
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+.home-child-card-heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #2563EB;
+}
+.home-child-card-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+}
+.home-child-card-actions p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 21px;
+    margin: 0;
+    color: grey;
+    margin-left: 8px;
+}
+
+.home-child-card-user-heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.5px;
+
+    color: #333333;
+
+}
+
+.home-child-card-user .home-child-card-user-name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    color: #333333;
+}
+
+.home-child-card-user .home-child-card-user-desingnation {  
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.5px;
+
+color: #666666;
+}
+
+.mat-icon{
+    color: grey;
+}
+.mat-card-avatar{
+    width: 48px;
+    height: 48px;
+}
+
