@@ -1,4 +1,198 @@
-<p>djhdhjsdjhsdjhsdjhsdjhsd
-    sdjhsdjhhjsd
-    sdjhjhsdhj
-    sdjh works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body details-card-header">
+                  <div class="details-card-header-backgound"></div>
+                  <div class="details-card-header-text">
+                    <p>Amit Sharma</p>
+                    <p>Developer</p>
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item p-4 details-card-actions">
+                    <div class="d-flex justify-content-between mb-3">
+                        <p>Followers</p>
+                        <p class="details-card-actions-bold">25</p>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <p>Following</p>
+                        <p class="details-card-actions-bold">25</p>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <p>Likes</p>
+                        <p class="details-card-actions-bold">25</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card-footer py-4 px-3">
+                    <button type="button" class="btn btn-outline-primary d-block w-100 py-3 mb-3">Follow</button>
+                    <button type="button" class="btn btn-outline-primary d-block w-100  py-3">Connect</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-9 details-right-section">
+            <div class="details-right-upper">
+                <h3>
+                    Dashboard with UI components
+                </h3>
+                <div class="row">
+                    <div class="col-8">
+                        <img src="../../../assets/banner.png" class="details-right-image w-100" alt="">
+                    </div>
+                    <div class="col-4">
+                        <div class="details-right-header mb-3">
+                            <h5 class="details-right-header-desc mb-2">Description</h5>
+                            <p class="details-right-header-text">A visual design for a trendy dashboard with all supporting UI elements which was designed by using Auto layout in figma.</p>
+                        </div>
+                        <div class="details-right-created mb-3">
+                            <h5 class="details-right-created-desc mb-2">Created in</h5>
+                            <div class="details-right-created-icons d-flex">
+                                <img class="details-right-created-icons" src="../../../assets/figma.png" alt="">
+                                <img class="details-right-created-icons" src="../../../assets/figma.png" alt="">
+                                <img class="details-right-created-icons" src="../../../assets/figma.png" alt="">
+                            </div>
+                        </div>
+                        <div class="details-right-rate mb-3">
+                            <h5 class="details-right-rate-desc mb-2">Rate the effort</h5>
+                            <p class="details-right-header-text">start start</p>
+                        </div>
+
+                        <div class="details-right-action mb-4 d-flex">
+                            <mat-icon>favorite_border</mat-icon>
+                            <mat-icon>thumb_up_off_alt</mat-icon>
+                            <mat-icon>screen_share</mat-icon>
+                        </div>
+
+                        <div class="details-right-buttons mb-4">
+                            <button type="button" class="btn btn-primary d-block w-100 py-3 mb-4">Follow</button>
+                            <button type="button" class="btn btn-outline-primary d-block w-100 py-3">Get the link</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details-right-lower">
+                <h3>
+                    Other Work
+                </h3>
+                <div class="row">
+                    <div [routerLink]="['/details', '3']" class="col-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-xs-12 col-sm-12 mb-3">
+                        <mat-card class="home-child-card">
+                            <img class="mb-4" mat-card-image src="https://cdn2.vectorstock.com/i/1000x1000/36/16/dashboard-ui-statistic-graphs-data-charts-vector-27133616.jpg" alt="Photo of a Shiba Inu">
+                            <mat-card-content class="">
+                                <h5 class="mb-2 home-child-card-heading">Dashboard</h5>
+                                <p  class="mb-3 home-child-card-text">
+                                    A wireframe for a simple dashboard design with top & left navigation. 
+                                </p>
+                                <p class="mb-4">
+                                    Rating
+                                </p>
+                                <div class="d-flex mb-3 home-child-card-actions">
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>cloud_download</mat-icon>
+                                        <p>25</p>
+                                    </div>
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>visibility</mat-icon>
+                                        <p>500</p>
+                                    </div>
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>thumb_up</mat-icon>
+                                        <p>45</p>
+                                    </div>    
+                                </div>
+                                <div class="home-child-card-user">
+                                    <h6 class="mb-2 home-child-card-user-heading">created by</h6>
+                                    <div class="d-flex">
+                                        <div mat-card-avatar class="example-header-image me-2"></div>
+                                        <div>
+                                            <mat-card-title class="home-child-card-user-name">Shiba Inu</mat-card-title>
+                                            <mat-card-subtitle class="home-child-card-user-designation">Dog Breed</mat-card-subtitle>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <div  [routerLink]="['/details', '4']" class="col-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-xs-12 col-sm-12 mb-3">
+                        <mat-card class="home-child-card">
+                            <img class="mb-4" mat-card-image src="https://cdn2.vectorstock.com/i/1000x1000/36/16/dashboard-ui-statistic-graphs-data-charts-vector-27133616.jpg" alt="Photo of a Shiba Inu">
+                            <mat-card-content class="">
+                                <h5 class="mb-2 home-child-card-heading">Dashboard</h5>
+                                <p  class="mb-3 home-child-card-text">
+                                    A wireframe for a simple dashboard design with top & left navigation. 
+                                </p>
+                                <p class="mb-4">
+                                    Rating
+                                </p>
+                                <div class="d-flex mb-3 home-child-card-actions">
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>cloud_download</mat-icon>
+                                        <p>25</p>
+                                    </div>
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>visibility</mat-icon>
+                                        <p>500</p>
+                                    </div>
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>thumb_up</mat-icon>
+                                        <p>45</p>
+                                    </div>    
+                                </div>
+                                <div class="home-child-card-user">
+                                    <h6 class="mb-2 home-child-card-user-heading">created by</h6>
+                                    <div class="d-flex">
+                                        <div mat-card-avatar class="example-header-image me-2"></div>
+                                        <div>
+                                            <mat-card-title class="home-child-card-user-name">Shiba Inu</mat-card-title>
+                                            <mat-card-subtitle class="home-child-card-user-designation">Dog Breed</mat-card-subtitle>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <div [routerLink]="['/details', '5']" class="col-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-xs-12 col-sm-12 mb-3">
+                        <mat-card class="home-child-card">
+                            <img class="mb-4" mat-card-image src="https://cdn2.vectorstock.com/i/1000x1000/36/16/dashboard-ui-statistic-graphs-data-charts-vector-27133616.jpg" alt="Photo of a Shiba Inu">
+                            <mat-card-content class="">
+                                <h5 class="mb-2 home-child-card-heading">Dashboard</h5>
+                                <p  class="mb-3 home-child-card-text">
+                                    A wireframe for a simple dashboard design with top & left navigation. 
+                                </p>
+                                <p class="mb-4">
+                                    Rating
+                                </p>
+                                <div class="d-flex mb-3 home-child-card-actions">
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>cloud_download</mat-icon>
+                                        <p>25</p>
+                                    </div>
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>visibility</mat-icon>
+                                        <p>500</p>
+                                    </div>
+                                    <div class="me-3 d-flex align-items-center">
+                                        <mat-icon>thumb_up</mat-icon>
+                                        <p>45</p>
+                                    </div>    
+                                </div>
+                                <div class="home-child-card-user">
+                                    <h6 class="mb-2 home-child-card-user-heading">created by</h6>
+                                    <div class="d-flex">
+                                        <div mat-card-avatar class="example-header-image me-2"></div>
+                                        <div>
+                                            <mat-card-title class="home-child-card-user-name">Shiba Inu</mat-card-title>
+                                            <mat-card-subtitle class="home-child-card-user-designation">Dog Breed</mat-card-subtitle>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
