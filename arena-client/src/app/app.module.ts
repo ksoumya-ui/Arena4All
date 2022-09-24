@@ -13,11 +13,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
-
+import { ToastrModule } from 'ngx-toastr';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './home/details/details.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
+import { HttpService } from './http.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,10 +29,14 @@ import { DetailsComponent } from './home/details/details.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    SignUpComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    ToastrModule.forRoot(),
     AppRoutingModule,
     MatInputModule,
     MatToolbarModule,
@@ -37,10 +45,11 @@ import { DetailsComponent } from './home/details/details.component';
     MatFormFieldModule,
     FormsModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    ToastrModule
     
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

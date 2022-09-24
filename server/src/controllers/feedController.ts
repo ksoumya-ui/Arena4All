@@ -14,7 +14,7 @@ var createfeed = (req:any,res:any) =>{
                         console.log("Error at 13",err);
                         return res.status(500).send({message: "Saving user error."});
                     }
-                        return res.status(200).send({feed: feedSaved});
+                        return res.status(200).send({ status:200,feed: feedSaved});
                 });
             } else {
         return res.status(200).send({message: 'Invalid Data.'});

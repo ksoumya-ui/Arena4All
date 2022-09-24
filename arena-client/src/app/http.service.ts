@@ -10,26 +10,26 @@ export class HttpService {
   constructor(private http: HttpClient) { }
 
   public signUp = (userData: any) => {
-    return this.http.post('/signup', userData);
+    return this.http.post('/api/user/signup', userData);
   }
 
   public loginUser = (userData:any) => {
-    return this.http.post(`login`,userData);
+    return this.http.post(`/api/user/login`,userData);
   }
 
-  public createPost = (postData:String) => {
-    return this.http.post(`/feed/create`,postData);
+  public createPost = (postData:any) => {
+    return this.http.post(`/api/feed/create`,postData);
   }
 
   public getFeed = () => {
-    return this.http.get(`/feed/fetch_all`);
+    return this.http.get(`/api/feed/fetch_all`);
   }
   public getUserPosts = (user:any) => {
-    return this.http.get(`/feed/fetch/:${user}`);
+    return this.http.get(`/api/feed/fetch/:${user}`);
   }
 
   public addView = (postId:any) => {
-    return this.http.post(`/feed/view/:id`, postId);
+    return this.http.post(`/api/feed/view/:id`, postId);
   }
 
   public addDownload = (postId:any) => {

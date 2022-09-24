@@ -17,9 +17,9 @@ app.use((req:any, res:any, next:any) => {
 });
 
 
-app.use('/feed',feedRoute);
+app.use('/api/feed',feedRoute);
 
-app.use('/user',userRoute);
+app.use('/api/user',userRoute);
 
 
 module.exports = app;

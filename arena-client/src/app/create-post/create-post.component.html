@@ -1,12 +1,33 @@
-<form class="example-form">
-    <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label>Email</mat-label>
-      <input matInput placeholder="test@deloitte.com" value=" test@deloitte.com">
-    </mat-form-field>
-  
-    <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label>Leave a comment</mat-label>
-      <textarea matInput placeholder="Post"></textarea>
-    </mat-form-field>
+
+<div class ="container create-post mt-5 text-center" >
+  <div class ="row">
+    <form class="create-post-form">
+      <mat-form-field class="create-post-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="test@deloitte.com"  #input1 [(ngModel)]='emailId' name ="Email">
+      </mat-form-field>
+      <mat-form-field class="create-post-full-width" appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Web Application"  #input2 [(ngModel)]='title' name ="Title">
+      </mat-form-field>
     
-  </form>
+      <div>
+        <textarea  class = "form-text" placeholder="Type Details..." #input3 [(ngModel)]='details' name ="Details"></textarea>
+    </div>
+  
+     <div class ="post-data mt-2">
+      <button mat-button color="warn">
+          <label for="photo-upload">
+              <input #photoSelector 
+              id="photo-upload" type="file" accept="image/*"/>
+              <mat-icon>insert_photo</mat-icon>
+          </label>
+      </button>
+       <div><button mat-flat-button color="warn" (click) = "onCreatePostClick()">Post</button>
+       </div>
+       </div>
+    </form>
+
+  </div>
+</div>
+
