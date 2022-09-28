@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit  {
       (response:any) => {
         console.log(response);
         if (response['status'] === 200 ) {
+          localStorage.setItem('login', 'true');
           this.toastr.success('Logged In Successfully!!');
           setTimeout(() => {
             this._router.navigate(['/create-post']);

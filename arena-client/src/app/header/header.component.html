@@ -4,7 +4,7 @@
         <div class="d-flex  justify-content-between py-4">
             <img src="/assets/Logo.png" alt="Arena 4 all">
             <div>
-                <a routerLink="/login">
+                <a routerLink="/login"  *ngIf="!logIn">
                 <span class="me-4">Sign in</span></a>
                 <a routerLink="/create-post">
                 <button mat-raised-button color="primary">Share my work</button></a>
